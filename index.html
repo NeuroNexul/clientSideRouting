@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Router-Test</title>
+    </head>
+    <body>
+        <div style="width:100%;position:absolute;z-index:10;top:60px;align-items:center; justify-content:center;display:flex;">
+        <button onclick="routeUrl('/home')">Home</button>
+        <button onclick="routeUrl('/about')">About</button>
+        <button onclick="routeUrl('/contact')">contact</button>
+        <button onclick="routeUrl('/post')">post</button>
+        </div>
+        
+        <route addr="/home" path="./htmls/index.html"></route>
+        <route addr="/about" path="./htmls/about.html"></route>
+        <route addr="/contact" path="./htmls/contact.html"></route>
+        <route addr="/post" path="./htmls/post.html"></route>
+        
+        <script src="router.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8">
+            routeDom('/home');
+        </script>
+        <script src="//cdn.jsdelivr.net/npm/eruda">
+        </script>
+        <script>
+            eruda.init();
+        </script>
+    </body>
+</html>
