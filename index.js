@@ -1,0 +1,1 @@
+routePage('/home','./htmls/index.html');
