@@ -1,1 +1,1 @@
-routePage('/home','./htmls/index.html');
+routePage('/home','./clientSideRouting/htmls/index.html');
